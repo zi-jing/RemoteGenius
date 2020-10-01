@@ -24,6 +24,8 @@ namespace Client
                 File.Create(firstStartMarkPath);
             }
 
+            SetupWindow setupWindow = new SetupWindow();
+            setupWindow.ShowDialog();
         }
     }
 }
