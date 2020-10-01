@@ -3,3 +3,8 @@ Client/bin
 Client/obj
 Console/bin
 Console/obj
+ClientLauncher/bin
+ClientLauncher/obj
+SharedLibrary/bin
+SharedLibrary/obj
+run

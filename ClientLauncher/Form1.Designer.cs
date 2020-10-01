@@ -1,4 +1,4 @@
-﻿namespace Client
+﻿namespace ClientLauncher
 {
     partial class Form1
     {

@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("RemoteExecutor控制台")]
-[assembly: AssemblyDescription("mpyz nb")]
+[assembly: AssemblyTitle("SharedLibrary")]
+[assembly: AssemblyDescription("希沃白板助手共享类库")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RemoteExecutor")]
-[assembly: AssemblyCopyright("Copyright ©  2020 github.com/zi-jing")]
+[assembly: AssemblyProduct("SharedLibrary")]
+[assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("bc403773-8247-4c3b-975e-af9eef0c4c44")]
+[assembly: Guid("13fcc2f1-1646-443d-a8dc-b182c7496cd1")]
 
 // 程序集的版本信息由下列四个值组成: 
 //

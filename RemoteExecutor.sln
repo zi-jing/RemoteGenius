@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{BC403773-8247-4C3B-975E-AF9EEF0C4C44}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientLauncher", "ClientLauncher\ClientLauncher.csproj", "{7B207C9A-5C58-43CC-BCA9-7838D8E891FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{13FCC2F1-1646-443D-A8DC-B182C7496CD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{BC403773-8247-4C3B-975E-AF9EEF0C4C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC403773-8247-4C3B-975E-AF9EEF0C4C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC403773-8247-4C3B-975E-AF9EEF0C4C44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B207C9A-5C58-43CC-BCA9-7838D8E891FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B207C9A-5C58-43CC-BCA9-7838D8E891FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B207C9A-5C58-43CC-BCA9-7838D8E891FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B207C9A-5C58-43CC-BCA9-7838D8E891FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13FCC2F1-1646-443D-A8DC-B182C7496CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13FCC2F1-1646-443D-A8DC-B182C7496CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13FCC2F1-1646-443D-A8DC-B182C7496CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13FCC2F1-1646-443D-A8DC-B182C7496CD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
