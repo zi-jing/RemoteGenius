@@ -1,38 +1,22 @@
-﻿using System.IO;
-using System.Windows.Forms;
-using System.Text;
-using System;
-
-namespace SharedLibrary
+﻿namespace SharedLibrary
 {
     public class Configuration
     {
+        private readonly bool isClient;
+        private string host;
+        private int port;
+        private string updateURL;
+        private bool checkUpdate;
+        private int maxUploadThreads;
+        private bool runOnOSStartup;
 
-    }
-    public class ConfigurationManager
-    {
-        public static readonly string CONFIG_FILE = Util.GetFile("config.json");
-        private static Configuration config = new Configuration();
+        public bool IsClient => isClient;
 
-        public void CreateDefaultConfig()
-        {
-            if (!File.Exists(CONFIG_FILE)) File.Create(CONFIG_FILE);
-        }
-        public void Load()
-        {
-            if (!File.Exists(CONFIG_FILE))
-            {
-                Util.Dialog("错误", "配置文件意外丢失，请尝试重新安装程序。", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                CreateDefaultConfig();
-            }
-            try
-            {
-                // Utf8JsonReader
-            }
-            catch(Exception e)
-            {
-
-            }
-        }
+        public string Host { get => host; set => host = value; }
+        public int Port { get => port; set => port = value; }
+        public string UpdateURL { get => updateURL; set => updateURL = value; }
+        public bool CheckUpdate { get => checkUpdate; set => checkUpdate = value; }
+        public int MaxUploadThreads { get => maxUploadThreads; set => maxUploadThreads = value; }
+        public bool RunOnOSStartup { get => runOnOSStartup; set => runOnOSStartup = value; }
     }
 }

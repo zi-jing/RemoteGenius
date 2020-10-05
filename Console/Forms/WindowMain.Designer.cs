@@ -36,15 +36,16 @@
             this.连接到上次的服务器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.历史连接ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.清除历史记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.ExitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OperationMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.文件操作ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ConnectionStatusLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ConnectionStatusLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -76,13 +77,15 @@
             this.连接到服务器ToolStripMenuItem,
             this.连接到上次的服务器ToolStripMenuItem,
             this.历史连接ToolStripMenuItem,
-            this.退出ToolStripMenuItem});
+            this.toolStripSeparator1,
+            this.ExitMenuItem});
             this.ConnectionMenuItem.Name = "ConnectionMenuItem";
             this.ConnectionMenuItem.Size = new System.Drawing.Size(44, 21);
             this.ConnectionMenuItem.Text = "连接";
             // 
             // 断开连接ToolStripMenuItem
             // 
+            this.断开连接ToolStripMenuItem.Enabled = false;
             this.断开连接ToolStripMenuItem.Name = "断开连接ToolStripMenuItem";
             this.断开连接ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.断开连接ToolStripMenuItem.Text = "断开连接";
@@ -95,6 +98,7 @@
             // 
             // 连接到上次的服务器ToolStripMenuItem
             // 
+            this.连接到上次的服务器ToolStripMenuItem.Enabled = false;
             this.连接到上次的服务器ToolStripMenuItem.Name = "连接到上次的服务器ToolStripMenuItem";
             this.连接到上次的服务器ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.连接到上次的服务器ToolStripMenuItem.Text = "连接到上次的服务器";
@@ -113,11 +117,17 @@
             this.清除历史记录ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.清除历史记录ToolStripMenuItem.Text = "清除历史记录";
             // 
-            // 退出ToolStripMenuItem
+            // toolStripSeparator1
             // 
-            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.退出ToolStripMenuItem.Text = "退出";
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(181, 6);
+            // 
+            // ExitMenuItem
+            // 
+            this.ExitMenuItem.Name = "ExitMenuItem";
+            this.ExitMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.ExitMenuItem.Text = "退出";
+            this.ExitMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // OperationMenuItem
             // 
@@ -129,8 +139,9 @@
             // 
             // 文件操作ToolStripMenuItem
             // 
+            this.文件操作ToolStripMenuItem.Enabled = false;
             this.文件操作ToolStripMenuItem.Name = "文件操作ToolStripMenuItem";
-            this.文件操作ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.文件操作ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.文件操作ToolStripMenuItem.Text = "文件操作";
             // 
             // HelpMenuItem
@@ -144,7 +155,7 @@
             // AboutMenuItem
             // 
             this.AboutMenuItem.Name = "AboutMenuItem";
-            this.AboutMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.AboutMenuItem.Size = new System.Drawing.Size(180, 22);
             this.AboutMenuItem.Text = "关于...";
             this.AboutMenuItem.Click += new System.EventHandler(this.AboutMenuItem_Click);
             // 
@@ -159,14 +170,14 @@
             this.panel1.Size = new System.Drawing.Size(789, 23);
             this.panel1.TabIndex = 2;
             // 
-            // ConnectionStatusLabel
+            // textBox1
             // 
-            this.ConnectionStatusLabel.AutoSize = true;
-            this.ConnectionStatusLabel.Location = new System.Drawing.Point(3, 6);
-            this.ConnectionStatusLabel.Name = "ConnectionStatusLabel";
-            this.ConnectionStatusLabel.Size = new System.Drawing.Size(89, 12);
-            this.ConnectionStatusLabel.TabIndex = 0;
-            this.ConnectionStatusLabel.Text = "未连接到服务器";
+            this.textBox1.Location = new System.Drawing.Point(125, 1);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(495, 21);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.WordWrap = false;
             // 
             // label1
             // 
@@ -177,14 +188,14 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "|";
             // 
-            // textBox1
+            // ConnectionStatusLabel
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 1);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(495, 21);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.WordWrap = false;
+            this.ConnectionStatusLabel.AutoSize = true;
+            this.ConnectionStatusLabel.Location = new System.Drawing.Point(3, 6);
+            this.ConnectionStatusLabel.Name = "ConnectionStatusLabel";
+            this.ConnectionStatusLabel.Size = new System.Drawing.Size(89, 12);
+            this.ConnectionStatusLabel.TabIndex = 0;
+            this.ConnectionStatusLabel.Text = "未连接到服务器";
             // 
             // WindowMain
             // 
@@ -221,7 +232,7 @@
         private System.Windows.Forms.ToolStripMenuItem 连接到上次的服务器ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 历史连接ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 清除历史记录ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ExitMenuItem;
         private System.Windows.Forms.ToolStripMenuItem OperationMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 文件操作ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HelpMenuItem;
@@ -230,6 +241,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label ConnectionStatusLabel;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 

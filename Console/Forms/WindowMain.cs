@@ -15,5 +15,10 @@ namespace Console
         {
             new AboutWindow().Show();
         }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

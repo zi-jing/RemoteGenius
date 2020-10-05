@@ -16,7 +16,6 @@ namespace Client
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // string firstStartMarkPath = Path.Combine(System.Environment.CurrentDirectory, "FirstRun");
             string firstStartMarkPath = Util.GetFile("FirstRun");
             if (!File.Exists(firstStartMarkPath))
             {

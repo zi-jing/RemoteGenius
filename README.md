@@ -31,3 +31,16 @@ RemoteExecutor.sln<br>
 
 Server: 由Node.js或其他语言编写的服务端<br>
 ClientInstaller: 用于一键部署客户端
+
+## 短期开发目标
+
+- 配置文件支持
+  - SharedLibrary
+    - [ ] 从`config.json`中读取配置
+    - [ ] `Configuration`类
+    - [ ] `ConfigManager`类
+  - Client
+    - [ ] 读取配置文件
+  - Console
+    - [ ] 读取配置文件
+- 待定
