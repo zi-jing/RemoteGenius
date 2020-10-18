@@ -11,8 +11,7 @@ namespace Console
         [STAThread]
         static void Main()
         {
-            Application.Run(WindowsController.INSTANCE.windowMain);
-
+            Console.Get().Launch();
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace ClientLauncher
 {
-    static class Program
+    static class ClientLauncher
     {
         /// <summary>
         /// 应用程序的主入口点。
@@ -13,7 +13,6 @@ namespace ClientLauncher
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
         }
     }
 }

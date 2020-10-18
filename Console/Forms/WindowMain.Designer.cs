@@ -141,7 +141,7 @@
             // 
             this.文件操作ToolStripMenuItem.Enabled = false;
             this.文件操作ToolStripMenuItem.Name = "文件操作ToolStripMenuItem";
-            this.文件操作ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.文件操作ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.文件操作ToolStripMenuItem.Text = "文件操作";
             // 
             // HelpMenuItem
@@ -155,7 +155,7 @@
             // AboutMenuItem
             // 
             this.AboutMenuItem.Name = "AboutMenuItem";
-            this.AboutMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.AboutMenuItem.Size = new System.Drawing.Size(109, 22);
             this.AboutMenuItem.Text = "关于...";
             this.AboutMenuItem.Click += new System.EventHandler(this.AboutMenuItem_Click);
             // 
