@@ -18,16 +18,3 @@ RemoteExecutor 是一个基于服务器的**异步**(重点！！这意味着**�
 ## 参与开发
 
 本项目主要使用C# .NET Framework 4.8(可以自行构建针对于低版本运行时的程序)和Java实现, IDE使用Visual Studio。
-
-## 短期开发目标
-
-- 配置文件支持
-  - SharedLibrary
-    - [ ] 从`config.json`中读取配置
-    - [ ] `Configuration`类
-    - [ ] `ConfigManager`类
-  - Client
-    - [ ] 读取配置文件
-  - Console
-    - [ ] 读取配置文件
-- 待定
