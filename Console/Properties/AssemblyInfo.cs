@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("RemoteExecutor控制台")]
-[assembly: AssemblyDescription("mpyz nb")]
+[assembly: AssemblyDescription("RemoteExecutor Console")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RemoteExecutor")]
+[assembly: AssemblyProduct("Console")]
 [assembly: AssemblyCopyright("Copyright ©  2020 github.com/zi-jing")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

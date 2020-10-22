@@ -19,7 +19,7 @@ namespace Client
             string firstStartMarkPath = Util.GetFile("FirstRun");
             if (!File.Exists(firstStartMarkPath))
             {
-                Util.Dialog("希沃白板小助手", "如果您看到这条信息，则表明希沃白板小助手安装成功。\n\n单击\"确定\"关闭并不再显示此信息。", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Util.Dialog("RemoteExecutor", "如果您看到这条信息，则表明RemoteExecutor安装成功。\n\n单击\"确定\"关闭并不再显示此信息。", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 File.Create(firstStartMarkPath);
             }
             Client.Get().Launch();
