@@ -4,8 +4,8 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("RemoteExecutor控制台")]
-[assembly: AssemblyDescription("RemoteExecutor Console")]
+[assembly: AssemblyTitle("RemoteGenius控制台")]
+[assembly: AssemblyDescription("RemoteGenius Console")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Console")]
