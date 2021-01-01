@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace SharedLibrary
 {
-    public class Util
+    public static class Util
     {
         /// <summary>
         /// 显示一个基本对话框
@@ -13,9 +13,38 @@ namespace SharedLibrary
         /// <param name="text">内容</param>
         /// <param name="buttons"></param>
         /// <param name="icon"></param>
-        public static void Dialog(string title, string text, MessageBoxButtons buttons, MessageBoxIcon icon)
+        public static DialogResult Dialog(string title, string text, MessageBoxButtons buttons, MessageBoxIcon icon)
         {
-            MessageBox.Show(text, title, buttons, icon);
+            return MessageBox.Show(text, title, buttons, icon);
+        }
+
+        /// <summary>
+        /// 显示一个仅包含一条消息和异常类型名称的错误提示。
+        /// </summary>
+        /// <param name="e">异常</param>
+        /// <param name="message">消息</param>
+        /// <seealso cref="ShowDetailedExceptionInfo(System.Exception, string)"/>
+        public static void ShowBriefExceptionInfo(System.Exception e, string message)
+        {
+            _ = MessageBox.Show(message + "\n" + e.GetType().Name + "\n\n有关详细信息，请查看日志文件。",
+                "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        /// <summary>
+        /// 显示一个包含一条消息和异常详细信息的错误提示
+        /// </summary>
+        /// <param name="e"></param>
+        /// <param name="message"></param>
+        /// <seealso cref="ShowBriefExceptionInfo(System.Exception, string)"/>
+        public static void ShowDetailedExceptionInfo(System.Exception e, string message)
+        {
+            _ = MessageBox.Show(message + "\n" + "异常类型: " + e.GetType().FullName + "\n" +
+                "异常信息: " + e.Message + "\n" +
+                "异常来源: " + e.Source + "\n" +
+                "运行时堆栈详细信息:\n" + e.StackTrace + "\n" +
+                "错误原因:\n" + (e.InnerException == null ? "无" : e.InnerException.ToString()) +
+                "\n\n有关详细信息，请查看日志文件。",
+                "错误", MessageBoxButtons.OK, MessageBoxIcon.Error); ;
         }
 
         /// <summary>

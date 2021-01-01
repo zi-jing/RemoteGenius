@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ServerConfig.cs" />
+    <Compile Include="Config\ConsoleConfig.cs" />
     <Compile Include="Console.cs" />
     <Compile Include="Forms\AboutWindow.cs">
       <SubType>Form</SubType>

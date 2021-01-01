@@ -1,4 +1,5 @@
-﻿using SharedLibrary.Api;
+﻿using Client.Config;
+using SharedLibrary.Api;
 
 namespace Client
 {
@@ -9,7 +10,7 @@ namespace Client
 
         public void Launch()
         {
-
+            ClientConfig.Load();
         }
 
         public static Client Get()

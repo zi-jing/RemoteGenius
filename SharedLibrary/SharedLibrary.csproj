@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\Config\ConfigTypes.cs" />
     <Compile Include="Api\ILaunchable.cs" />
+    <Compile Include="Exception\ReportedException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util.cs" />
   </ItemGroup>

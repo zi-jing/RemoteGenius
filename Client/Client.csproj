@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
-    <Compile Include="ClientConfig.cs" />
+    <Compile Include="Config\ClientConfig.cs" />
     <Compile Include="SetupWindow.cs">
       <SubType>Form</SubType>
     </Compile>

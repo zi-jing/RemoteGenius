@@ -1,4 +1,6 @@
-﻿using SharedLibrary.Api;
+﻿using Console.Config;
+using SharedLibrary.Api;
+using SharedLibrary.Exception;
 using System.Windows.Forms;
 
 namespace Console
@@ -11,6 +13,15 @@ namespace Console
 
         public void Launch()
         {
+            try
+            {
+                ConsoleConfig.Load();
+            }
+            catch (ReportedException)
+            {
+                return;
+            }
+            
             this.windowsController = new WindowsController();
             ShowWindow(windowsController.windowMain);
         }
