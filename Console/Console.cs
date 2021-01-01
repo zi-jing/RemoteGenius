@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
+﻿using SharedLibrary.Api;
 using System.Windows.Forms;
-using SharedLibrary.Api;
 
 namespace Console
 {

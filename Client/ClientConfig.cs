@@ -6,10 +6,17 @@ using System.Windows.Forms;
 
 namespace Client
 {
-    class ConfigurationManager
+    class ClientConfigObject
+    {
+        private int[] version;
+
+        public int[] Version { get => version; set => version = value; }
+    }
+
+    class ClientConfig
     {
         public static readonly string CONFIG_FILE = Util.GetFile("config.json");
-        private static Configuration config = new Configuration();
+        private static ClientConfigObject config = new ClientConfigObject();
 
         public void CreateDefaultConfig()
         {
@@ -26,7 +33,9 @@ namespace Client
             {
                 JsonReader jsonReader = Util.ReadJson(CONFIG_FILE);
             }
+#pragma warning disable CS0168 // 声明了变量“e”，但从未使用过
             catch (Exception e)
+#pragma warning restore CS0168 // 声明了变量“e”，但从未使用过
             {
 
             }

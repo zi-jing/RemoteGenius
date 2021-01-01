@@ -1,7 +1,4 @@
 ﻿using SharedLibrary.Api;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Client
 {
@@ -12,7 +9,7 @@ namespace Client
 
         public void Launch()
         {
-            
+
         }
 
         public static Client Get()
